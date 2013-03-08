@@ -1,6 +1,3 @@
-// The module to "bootstrap"
-var loadModule = "server";
-
 // Configuration Object for Dojo Loader:
 dojoConfig = {
   baseUrl: __dirname, // Where we will put our packages
@@ -13,20 +10,35 @@ dojoConfig = {
   // loader that your packages share the same root path as the loader,
   // this really isn't always a good idea and it is better to be
   // explicit about our package map.
-  packages: [{
-    name: "dojo",
-    location: "public/js/dojo"
-  },{
-    name: "app",
-    location: "public/js/app"
-  },{
-    name: "wsrpc",
-    location: "public/js/wsrpc"
-  },{
-    name: "server",
-    location: "server"
-  }],
-  deps: [ loadModule ] // And array of modules to load on "boot"
+  packages: [
+    {
+      name: "dojo",
+      location: "public/js/dojo"
+    },
+    {
+      name: "app",
+      location: "public/js/app"
+    },
+    {
+      name: "rawr",
+      location: "public/js/rawr"
+    },
+    {
+      name: 'meld',
+      location: 'public/js',
+      main: 'meld'
+    },
+    {
+      name: 'when',
+      location: 'public/js',
+      main: 'when'
+    },
+    {
+      name: 'server',
+      location: './'
+    }
+  ],
+  deps: [ 'server' ] // And array of modules to load on "boot"
 };
 
 // Now load the Dojo loader

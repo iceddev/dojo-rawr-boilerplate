@@ -1,21 +1,23 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "dojo-rawr-boilerplate",
+  "version": "0.1.0",
   "volo": {
     "baseUrl": "public/js",
     "dependencies": {
       "dojo": "github:dojo/dojo/1.8.3",
       "util": "github:dojo/util/1.8.3",
-      "wsrpc": "github:monteslu/wsrpc/master"
+      "meld": "github:cujojs/meld/1.2.0",
+      "when": "github:cujojs/when/1.8.1",
+      "rawr": "github:iceddev/rawr/master",
+      "engine.io-client": "github:LearnBoost/engine.io-client/0.4.3"
     }
   },
-  "private": true,
+  "main": "index",
   "scripts": {
-    "start": "node app"
+    "start": "node index"
   },
   "dependencies": {
-    "express": "3.1.0",
-    "jade": "*",
-    "socket.io" : ">= 0.9"
+    "ecstatic": "~0.4.0",
+    "engine.io": "~0.4.3"
   }
 }

@@ -1,17 +1,20 @@
-dojo-wsrpc-boilerplate
+dojo-rawr-boilerplate
 ========================
 
-A boilerplate for creating RPC/Websocket applications using dojo/AMD and socket.io with express
+A boilerplate for creating RPC/Websocket applications using Dojo, Rawr, and Engine.io
 
-
-be sure to run:
+## Dependencies
 
 `npm install`
 
-
-and:
+and
 
 `volo install`
 
+## Start
 
-to pull down server and client dependencies.
+`npm start`
+
+or
+
+`node index`
